@@ -120,3 +120,36 @@ case "Black" where colorNumber == 3:
 default:
     break
 }
+
+let updateDeniedMessage = "Can't update Xcode"
+let updateMessage = "Updated!"
+
+let latestXcodeVersion = false
+let latestMacVersion = true
+
+if !latestXcodeVersion
+{
+    print(updateMessage)
+}
+else
+{
+    print(updateDeniedMessage)
+}
+
+if(latestXcodeVersion && latestMacVersion)
+{
+    print(updateMessage)
+}
+else
+{
+    print(updateDeniedMessage)
+}
+
+if(latestXcodeVersion || latestMacVersion)
+{
+    print(updateMessage)
+}
+else
+{
+    print(updateDeniedMessage)
+}
